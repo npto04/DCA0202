@@ -1,3 +1,6 @@
+# a backup copy of a file
+*.bak
+
 # =========================
 # Operating System Files
 # =========================
