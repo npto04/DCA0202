@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity operator is
+	port (
+		CLK, LD_Tempo, Clr_Tempo, Ld_TempoC, Clr_TempoC: in std_logic;
+		Sel: in std_logic_vector(1 downto 0);
+		TempoMenor5000, TempoMaior2000: out std_logic;
+		d3, d2, d1, d0 : out std_logic_vector(6 downto 0)
+	);

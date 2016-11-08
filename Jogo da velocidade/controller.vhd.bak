@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_arith.ALL;
+use ieee.std_logic_unsigned.ALL;
+
+entity controller is
+	port (			  
+			  clk, BTInicio, BTAP, TempoMenor5000, TempoMaior2000: in std_logic;
+			  LedAP, LedR, LD_Tempo, Clr_Tempo, Ld_TempoC, Clr_TempoC: out std_logic;
+			  Sel: out std_logic_vector(1 downto 0)
+		 );
+end controller;
+ 
+architecture behav of controller is
+	Constant I: std_LOGIC_vector(2 downto 0) := "000";
+	Constant Cont: std_LOGIC_vector(2 downto 0) := "001";
+	Constant LigarLed: std_LOGIC_vector(2 downto 0) := "010";
+	Constant MostrarTempo: std_LOGIC_vector(2 downto 0) := "011";
+	Constant Erro: std_LOGIC_vector(2 downto 0) := "100";
+	Constant Rapido: std_LOGIC_vector(2 downto 0) := "101";
+	SIGNAL estado: std_LOGIC_vector(2 dowto 0) := I;
+	begin
+		PROCESS(clk,BTInicio,BTAP)
+			BEGIN
+				IF (clk'EVENT and clk='1') THEN
+					CASE estado IS
+						WHEN
+end behav;

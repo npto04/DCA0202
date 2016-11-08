@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_arith.ALL;
+use ieee.std_logic_unsigned.ALL;
+
+entity soma is
+	generic(n : integer := 4);
+	port (			  
+			  a,b: in std_logic_vector(n-1 downto 0);
+			  s: out std_logic_vector(n-1 downto 0)
+		 );
+end soma;
+ 
+architecture behav of soma is
+
+begin
+  s <= a+b;
+end behav;
