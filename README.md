@@ -1,3 +1,5 @@
-# DCA0202
+# DCA0202 - UFRN
 
-Design of Programmable Processor on RTL design for Altera's Cyclone II FPGA family
+Project of Programmable Processor on RTL design for Altera's Cyclone II FPGA family
+
+not working
