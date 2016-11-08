@@ -1,3 +1,3 @@
 # DCA0202
 
-Design of Programmable Processors on RTL design in VHDL
+Design of Programmable Processor on RTL design for Altera's Cyclone II FPGA family
