@@ -4,11 +4,10 @@ use ieee.std_logic_arith.ALL;
 use ieee.std_logic_unsigned.ALL;
 
 entity ALU is
-	generic(n : integer := 4);
 	port (			  
-			  a,b: in std_logic_vector(n-1 downto 0);
+			  a,b: in std_logic_vector(15 downto 0);
 			  sel: in std_logic_vector(2 downto 0);
-			  s: out std_logic_vector(n-1 downto 0)
+			  s: out std_logic_vector(15 downto 0)
 		 );
 end ALU;
  
@@ -20,5 +19,6 @@ begin
 		not a when sel="011" else
 		a and b when sel="100" else
 		a or b when sel="101" else
+		a xnor b when sel="110" else
 		a;
 end behav;

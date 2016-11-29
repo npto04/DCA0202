@@ -44,7 +44,19 @@ set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:27:47  NOVEMBER 08, 2
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
+set_global_assignment -name VHDL_FILE soma.vhd
+set_global_assignment -name VHDL_FILE reg.vhd
+set_global_assignment -name VHDL_FILE PC.vhd
+set_global_assignment -name VHDL_FILE equalZero.vhd
+set_global_assignment -name VHDL_FILE datapath.vhd
+set_global_assignment -name VHDL_FILE comp.vhd
+set_global_assignment -name VHDL_FILE BCproc.vhd
+set_global_assignment -name VHDL_FILE adderJmp.vhd
 set_global_assignment -name QIP_FILE RAM.qip
 set_global_assignment -name VHDL_FILE mux3x1.vhd
 set_global_assignment -name VHDL_FILE alu.vhd
 set_global_assignment -name VHDL_FILE Register_File.vhd
+set_global_assignment -name VHDL_FILE IR.vhd
+set_global_assignment -name VHDL_FILE control_unity.vhd
+set_global_assignment -name VHDL_FILE Instr_memory.vhd
+set_global_assignment -name VHDL_FILE processor.vhd
